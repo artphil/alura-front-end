@@ -1,0 +1,17 @@
+/* CSS HEX 
+--gamboge: #f1a208ff;
+--cal-poly-green: #254d32ff;
+--cambridge-blue: #7b9e87ff;
+--asparagus: #6cae75ff;
+--seasalt: #faf9f9ff;
+--black: #080705ff;
+*/
+
+body {
+    background-color: #080705;
+    color: #faf9f9;
+}
+
+h1 strong {
+    color: #6cae75;
+}
