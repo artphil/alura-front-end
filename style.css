@@ -9,10 +9,15 @@ root {
     --color-bg: #080705;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto&display=swap');
+
 * {
     margin: 0;
     border: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    /* font-family: 'Roboto' , sans-serif; */
 }
 
 body {
@@ -24,8 +29,11 @@ body {
     color: #faf9f9;
 }
 
-strong {
-    /* color: var(--color-emphasis); */
+.title-emphasis {
+    color: #6cae75;
+}
+
+.text-emphasis {
     color: #6cae75;
 }
 
@@ -43,4 +51,41 @@ a:hover {
 a:visited {
     /* color: var(--color-link-visited); */
     color: rgb(209, 105, 0);
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.container__content {
+    width: 615px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__content__title {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.container__content__text {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-link {
+    background-color: #6cae75;
+    padding: 10px;
+    border-radius: 5px;
+    color:#faf9f9;
 }
