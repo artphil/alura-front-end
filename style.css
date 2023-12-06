@@ -1,17 +1,46 @@
-/* CSS HEX 
---gamboge: #f1a208ff;
---cal-poly-green: #254d32ff;
---cambridge-blue: #7b9e87ff;
---asparagus: #6cae75ff;
---seasalt: #faf9f9ff;
---black: #080705ff;
-*/
+/* CSS HEX */
+root {
+    --color-link: #f1a208;
+    --color-link-hover: rgb(252, 186, 121);
+    --color-link-visited: rgb(209, 105, 0);
+    --color-fort: #254d32;
+    --color-emphasis: #6cae75;
+    --color-text: #faf9f9;
+    --color-bg: #080705;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
+    /* background-color: var(--color-bg); */
+    /* color: var(--color-text); */
+    height: 100vh;
+    box-sizing: border-box;
     background-color: #080705;
     color: #faf9f9;
 }
 
-h1 strong {
+strong {
+    /* color: var(--color-emphasis); */
     color: #6cae75;
+}
+
+a {
+    /* color: var(--color-link); */
+    color: #f1a208;
+    text-decoration: none;
+}
+
+a:hover {
+    /* color: var(--color-link-hover); */
+    color: rgb(253, 200, 147);
+}
+
+a:visited {
+    /* color: var(--color-link-visited); */
+    color: rgb(209, 105, 0);
 }
