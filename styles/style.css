@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 .container__content__link:hover {
-    color: var(--color-seconanalogous);
+    color: var(--color-secondary);
 }
 
 .container__content {
