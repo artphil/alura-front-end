@@ -21,7 +21,6 @@ html {
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     background-color: #080705;
     color: #faf9f9;
@@ -38,7 +37,7 @@ body {
 .container {
     display: flex;
     align-items:center;
-    margin: 10% 15%;
+    padding: 10% 15%;
     justify-content: space-between;
 }
 
@@ -46,10 +45,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #6cae75;
-}
-
-.container__content__link:visited {
-    color: #254d32;
 }
 
 .container__content__link:hover {
@@ -107,4 +102,12 @@ body {
 .container__content__buttons__link:hover {
     background-color: #272727;
     color: #6cae75;
+}
+
+footer {
+    background-color: #6cae75;
+    color: #080705;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
