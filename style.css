@@ -38,19 +38,20 @@ body {
 .container {
     display: flex;
     align-items: stretch;
+    margin: 10% 15%;
     justify-content: space-between;
-    margin: 10%;
 }
 
 .container__content__link {
     font-family: 'Montserrat', sans-serif;
-text-decoration: none;
-color: #6cae75;
+    text-decoration: none;
+    color: #6cae75;
 }
 
 .container__content__link:visited {
     color: #254d32;
 }
+
 .container__content__link:hover {
     color: #f1a208;
 }
@@ -60,7 +61,7 @@ color: #6cae75;
     height: 482px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .container__content__title {
@@ -75,7 +76,7 @@ color: #6cae75;
 
 .button-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .button-link {
