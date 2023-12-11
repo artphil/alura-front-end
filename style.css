@@ -9,7 +9,7 @@ root {
     --color-bg: #080705;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -17,12 +17,10 @@ root {
 }
 
 html {
-    /* font-family: 'Roboto' , sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    /* background-color: var(--color-bg); */
-    /* color: var(--color-text); */
     height: 100vh;
     box-sizing: border-box;
     background-color: #080705;
@@ -37,27 +35,24 @@ body {
     color: #6cae75;
 }
 
-a {
-    /* color: var(--color-link); */
-    color: #f1a208;
-    text-decoration: none;
-}
-
-a:hover {
-    /* color: var(--color-link-hover); */
-    color: rgb(253, 200, 147);
-}
-
-a:visited {
-    /* color: var(--color-link-visited); */
-    color: rgb(209, 105, 0);
-}
-
 .container {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     margin: 10%;
+}
+
+.container__content__link {
+    font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+color: #6cae75;
+}
+
+.container__content__link:visited {
+    color: #254d32;
+}
+.container__content__link:hover {
+    color: #f1a208;
 }
 
 .container__content {
@@ -85,7 +80,13 @@ a:visited {
 
 .button-link {
     background-color: #6cae75;
-    padding: 10px;
+    width: 30%;
+    font-size: 24px;
+    padding: 20px 0;
     border-radius: 5px;
-    color:#faf9f9;
+    color: #faf9f9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
 }
