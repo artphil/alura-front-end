@@ -37,7 +37,7 @@ body {
 
 .container {
     display: flex;
-    align-items: stretch;
+    align-items:center;
     margin: 10% 15%;
     justify-content: space-between;
 }
@@ -74,20 +74,37 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.button-group {
+.container__content__buttons {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
-.button-link {
-    background-color: #6cae75;
-    width: 30%;
+.container__content__buttons__title {
+    font-size: 24px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.container__content__buttons__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #6cae75;
+    width: 378px;
     font-size: 24px;
     padding: 20px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #faf9f9;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
+}
+
+.container__content__buttons__link:hover {
+    background-color: #272727;
+    color: #6cae75;
 }
