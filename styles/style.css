@@ -7,7 +7,7 @@
     --color-primary: #6cae75;
     --color-secondary: #f1a208;
     --color-analogous: #254d32;
-    --color-hover:#272727;
+    --color-hover: #272727;
 
     --font-text: 'Montserrat', sans-serif;
     --font-title: 'Krona One', sans-serif;
@@ -28,7 +28,7 @@ body {
 }
 
 header {
-padding: 2% 0 0 15%;
+    padding: 2% 0 0 15%;
 }
 
 nav {
@@ -55,41 +55,47 @@ nav a:hover {
     color: var(--color-primary);
 }
 
-.container {
+.presentation {
     display: flex;
-    align-items:center;
+    align-items: center;
     padding: 5% 15%;
     justify-content: space-between;
+    gap: 16px;
 }
 
-.container__content__link {
-    font-family: var(--font-text);
-    text-decoration: none;
-    color: var(--color-primary);
+.presentation__image {
+    width: 50%;
 }
 
-.container__content__link:hover {
-    color: var(--color-secondary);
-}
-
-.container__content {
-    width: 615px;
+.presentation__content {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.container__content__title {
+.presentation__content__link {
+    font-family: var(--font-text);
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.presentation__content__link:hover {
+    color: var(--color-secondary);
+}
+
+
+.presentation__content__title {
     font-size: var(--font-size-title);
     font-family: 'Krona One', sans-serif;
 }
 
-.container__content__text {
+.presentation__content__text {
     font-size: var(--font-size-text);
     font-family: var(--font-text);
 }
 
-.container__content__buttons {
+.presentation__content__buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,12 +103,12 @@ nav a:hover {
     gap: 10px;
 }
 
-.container__content__buttons__title {
+.presentation__content__buttons__title {
     font-size: var(--font-size-text);
     font-family: 'Krona One', sans-serif;
 }
 
-.container__content__buttons__link {
+.presentation__content__buttons__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +124,7 @@ nav a:hover {
     text-align: center;
 }
 
-.container__content__buttons__link:hover {
+.presentation__content__buttons__link:hover {
     background-color: var(--color-hover);
     color: var(--color-primary);
 }
@@ -131,4 +137,26 @@ footer {
     font-family: var(--font-text);
     font-size: var(--font-text);
     font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding-left: 0;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 15% 5%;
+    }
+    .presentation__image {
+        width: auto;
+    }
+    
+    .presentation__content {
+        width: auto;
+    }
 }
